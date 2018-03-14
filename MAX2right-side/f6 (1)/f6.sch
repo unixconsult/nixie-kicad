@@ -1298,11 +1298,11 @@ Text Label 2950 5350 0    60   ~ 0
 48
 Text Label 3050 5200 0    60   ~ 0
 44
-Text Label 3150 5350 0    60   ~ 0
+Text Label 3100 5100 0    60   ~ 0
 42
-Text Label 3250 5200 0    60   ~ 0
+Text Label 3200 5250 0    60   ~ 0
 40
-Text Label 3350 5350 0    60   ~ 0
+Text Label 3300 5400 0    60   ~ 0
 38
 Text Label 3450 5100 0    60   ~ 0
 36
@@ -1739,7 +1739,7 @@ Connection ~ 3250 7150
 Wire Wire Line
 	3600 7150 3600 6900
 Wire Wire Line
-	3600 7150 3700 7150
+	3600 7150 3950 7150
 Wire Wire Line
 	3700 7550 3700 7650
 Wire Wire Line
@@ -1807,5 +1807,132 @@ wß gr
 Text Notes 1900 6450 0    60   ~ 0
 40
 Text Notes 3450 6650 0    60   ~ 0
-62
+36
+$Comp
+L +5V #PWR?
+U 1 1 5AA94862
+P 1850 6900
+F 0 "#PWR?" H 1850 6750 50  0001 C CNN
+F 1 "+5V" H 1850 7040 50  0000 C CNN
+F 2 "" H 1850 6900 50  0000 C CNN
+F 3 "" H 1850 6900 50  0000 C CNN
+	1    1850 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 6900 1750 6900
+$Comp
+L R R?
+U 1 1 5AA94D46
+P 650 6950
+F 0 "R?" V 730 6950 50  0000 C CNN
+F 1 "20k" V 650 6950 50  0000 C CNN
+F 2 "" V 580 6950 50  0000 C CNN
+F 3 "" H 650 6950 50  0000 C CNN
+	1    650  6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5AA94E40
+P 650 7350
+F 0 "R?" V 730 7350 50  0000 C CNN
+F 1 "33k" V 650 7350 50  0000 C CNN
+F 2 "" V 580 7350 50  0000 C CNN
+F 3 "" H 650 7350 50  0000 C CNN
+	1    650  7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6800 1750 6600
+Wire Wire Line
+	1750 6600 650  6600
+Wire Wire Line
+	650  6600 650  6800
+Wire Wire Line
+	650  7100 650  7200
+Wire Wire Line
+	650  7500 650  7550
+Wire Wire Line
+	650  7550 1950 7550
+Wire Wire Line
+	3350 5450 3350 4850
+Wire Wire Line
+	3350 4850 500  4850
+Wire Wire Line
+	500  4850 500  7150
+Wire Wire Line
+	500  7150 650  7150
+Connection ~ 650  7150
+Text Notes 2700 4850 0    60   ~ 0
+set pendulum clk
+Text Notes 2300 4850 0    60   ~ 0
+ge
+Wire Wire Line
+	3450 5450 3450 5100
+Wire Wire Line
+	3450 5100 4000 5100
+Wire Wire Line
+	4000 5100 4000 6950
+Wire Wire Line
+	4000 6950 3250 6950
+Wire Wire Line
+	3250 6950 3250 7150
+Text Notes 3700 6950 0    60   ~ 0
+ge bn  pend. clk\n
+$Comp
+L Led_Small D?
+U 1 1 5AA98C99
+P 3950 7550
+F 0 "D?" H 3900 7675 50  0000 L CNN
+F 1 "Led_Small" H 3775 7450 50  0000 L CNN
+F 2 "" V 3950 7550 50  0000 C CNN
+F 3 "" V 3950 7550 50  0000 C CNN
+	1    3950 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5AA98DD3
+P 3950 7300
+F 0 "R?" H 3980 7320 50  0000 L CNN
+F 1 "47k" H 3980 7260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3950 7300 50  0001 C CNN
+F 3 "" H 3950 7300 50  0000 C CNN
+	1    3950 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 7400 3950 7450
+Wire Wire Line
+	3700 7650 3950 7650
+Wire Wire Line
+	3950 7150 3950 7200
+Connection ~ 3700 7150
+$Comp
+L R R?
+U 1 1 5AA9ED88
+P 1400 5650
+F 0 "R?" V 1480 5650 50  0000 C CNN
+F 1 "10k" V 1400 5650 50  0000 C CNN
+F 2 "" V 1330 5650 50  0000 C CNN
+F 3 "" H 1400 5650 50  0000 C CNN
+	1    1400 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 5600 1250 5650
+Wire Wire Line
+	1600 5650 1550 5650
+$Comp
+L +3.3V #PWR?
+U 1 1 5AA9F331
+P 1250 5600
+F 0 "#PWR?" H 1250 5450 50  0001 C CNN
+F 1 "+3.3V" H 1250 5740 50  0000 C CNN
+F 2 "" H 1250 5600 50  0000 C CNN
+F 3 "" H 1250 5600 50  0000 C CNN
+	1    1250 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
