@@ -1770,8 +1770,8 @@ $Comp
 L CONN_01X01 anodes_off_for_setting
 U 1 1 5A779E4F
 P 1950 6650
-F 0 "anodes_off_for_setting" H 1950 6850 50  0000 C CNN
-F 1 "anodes_off" V 2050 6650 50  0000 C CNN
+F 0 "anodes_off_for_setting" H 1200 6700 50  0000 C CNN
+F 1 "anodes_off A1" V 2050 6750 50  0000 C CNN
 F 2 "" H 1950 6650 50  0000 C CNN
 F 3 "" H 1950 6650 50  0000 C CNN
 	1    1950 6650
@@ -1935,4 +1935,10 @@ F 3 "" H 1250 5600 50  0000 C CNN
 	1    1250 5600
 	1    0    0    -1  
 $EndComp
+Text Notes 1950 6150 1    60   ~ 0
+gr rs
+Text Notes 5350 6750 2    60   ~ 0
+sw
+Text Notes 5650 6900 2    60   ~ 0
+wß
 $EndSCHEMATC
